@@ -1016,7 +1016,7 @@ function MainHolder:Window(HubTitle)
         end
     end)
 
-    MainHolder:Button("Discord Server", function()
+    MainHolder:Button("Argetnar Hub", function()
                OrionLib:MakeNotification({
         Name = "Discord",
         Content = "Discord Link Copied =)",
@@ -1110,22 +1110,19 @@ function MainHolder:Window(HubTitle)
     RemoteSpyButton.Position = UDim2.new(0.048856549, 0, 0.145299152, 0)
     RemoteSpyButton.Size = UDim2.new(0, 136, 0, 70)
     RemoteSpyButton.Font = Enum.Font.Gotham
-    RemoteSpyButton.Text = "Remote Spy"
+    RemoteSpyButton.Text = "Anti Afk"
     RemoteSpyButton.TextColor3 = Color3.fromRGB(255, 255, 255)
     RemoteSpyButton.TextSize = 22.000
     RemoteSpyButton.TextWrapped = true
 
     RemoteSpyButton.MouseButton1Click:Connect(function()
-        MainHolder:Notify("", "Loading Hydroxide...", 2)
-        local owner = "Upbolt"
-        local branch = "revision"
-        
-        local function webImport(file)
-            return loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/%s/Hydroxide/%s/%s.lua"):format(owner, branch, file)), file .. '.lua')()
-        end
-        
-        webImport("init")
-        webImport("ui/main")
+        MainHolder:Notify("", "Loading AntiAfk...", 2)
+        local Module = require(game:GetService("Players").LocalPlayer.PlayerScripts.ClientMain.Replications.Workers.WalkDummy)
+        setconstant(Module,34,function()
+        game:GetService("RunService").Heartbeat:Wait()
+        wait(1)
+        MainHolder:Notify("", "Successful!", 2)
+end)
     end)
     
     RemoteSpyButtonCorner.CornerRadius = UDim.new(0, 6)
