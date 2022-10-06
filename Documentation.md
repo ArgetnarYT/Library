@@ -2,7 +2,7 @@
 UI Library Designed for Easy Use
 # UI Library
 ```lua
-local ArgetnarLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/ArgetnarYT/scripts/main/ArgetnarLibrary.lua"))()
+local ArgetnarLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/ArgetnarYT/Library/main/ArgetnarLibrary.lua"))()
 ```
 # Creating A Notification
 ```lua
