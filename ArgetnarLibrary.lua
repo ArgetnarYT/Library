@@ -1,8 +1,5 @@
-local NotificationHolder = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))()
-local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
-
-if game.CoreGui:FindFirstChild("ArgetnarHub") then
-    game.CoreGui.ArgetnarHub:Destroy();
+if game.CoreGui:FindFirstChild("MangoHub") then
+    game.CoreGui.MangoHub:Destroy();
 end
 
 if game.CoreGui:FindFirstChild("Sample") then
