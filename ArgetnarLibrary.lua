@@ -1,5 +1,5 @@
-if game.CoreGui:FindFirstChild("ArgetnarHub") then
-    game.CoreGui.ArgetnarHub:Destroy();
+if game.CoreGui:FindFirstChild("MangoHub") then
+    game.CoreGui.MangoHub:Destroy();
 end
 
 if game.CoreGui:FindFirstChild("Sample") then
