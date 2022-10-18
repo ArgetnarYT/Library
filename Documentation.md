@@ -84,6 +84,6 @@ local LabelRef = TabFarm:Label("This is a Label")
 
 LabelRef:Refresh("Lol New Title")
 ```
-#UI Library by Doku & Argetnar KeyHub
+# UI Library by Doku & Argetnar KeyHub
 This Ui is made to simplify the work of the authors of our Argetnar Hub server
 `https://discord.gg/cwyH9FrKQr`
