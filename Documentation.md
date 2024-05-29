@@ -12,7 +12,7 @@ To use ArgetnarUI in your Roblox game, follow these steps:
 
 1. Load the library
    ```lua
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ArgetnarYT/Library/main/ArgetnarLibrary.lua", true))()
+    local ArgetnarUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/ArgetnarYT/Library/main/ArgetnarLibrary.lua"))()
    ```
 
 ### Usage
